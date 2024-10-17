@@ -29,9 +29,3 @@ Run the `parallel-packed-csr` binary from your build directory.
   * `-pppcsrnuma`: Partitioning with explicit NUMA optimizations (default)
 * `-double_granularity=`: the rg parameter, need to be set as a power to two.
 
-# Authors
-* Hongru Gao
-* Shuhao Zhang 
-* Xiaofei Liao
-* Hai Jin
-
