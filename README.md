@@ -1,5 +1,5 @@
 # revised PPCSR
-We conduct some experimental studies on dynamic graph processing with the focus on optimizing its reconstruction process. Our code is based on an existing work parallel PCSR (https://github.com/domargan/parallel-packed-csr). The corresponding paper "Accelerated Reconstruction of Dynamic Graph Processing with Page Remapping" has been submitted to SIGMOD2025.
+We conduct some experimental studies on dynamic graph processing with the focus on optimizing the performance of its reconstruction process. Our code is based on an existing work parallel PCSR (https://github.com/domargan/parallel-packed-csr). The corresponding paper "Accelerated Reconstruction of Dynamic Graph Processing with Page Remapping" has been submitted to SIGMOD2025.
 
 # Prerequisites
 * CMAKE 3.8 or newer required.
