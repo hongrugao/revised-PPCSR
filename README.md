@@ -1,7 +1,5 @@
-# Parallel Packed CSR
-A parallel implementation of the packed CSR data structure, based on its initial single threaded design[[1]](#1)(https://github.com/wheatman/Packed-Compressed-Sparse-Row/) and further parallel extension [[2]](#2).
-Accepts a core graph, which it loads first and an update file, which it uses to update the core graph (insert or delete edges).
-Performs edge insertions and deletions in parallel and uses NUMA-aware placement of data and worker threads.
+# revised PPCSR
+We conduct some experimental studies on dynamic graph processing with the focus on its reconstruction process. Our code is based on an existing work parallel PCSR (https://github.com/domargan/parallel-packed-csr). The corresponding paper is planned for submission to SIGMOD2025.
 
 # Prerequisites
 * CMAKE 3.8 or newer required.
@@ -29,20 +27,10 @@ Run the `parallel-packed-csr` binary from your build directory.
   * `-ppcsr`: No partitioning
   * `-pppcsr`: Partitioning (1 partition per NUMA domain)
   * `-pppcsrnuma`: Partitioning with explicit NUMA optimizations (default)
+* `-double_granularity=`: the rg parameter, need to be set as a power to two.
 
 # Authors
-* Eleni Alevra
-* Christian Menges 
-* Dom Margan 
+* Hongru Gao
+* Shuhao Zhang 
+* Xiaofei Liao
 
-# References
-<a id="1">[1]</a>
-Wheatman, B., & Xu, H. (2018).
-Packed Compressed Sparse Row: A Dynamic Graph
-Representation. 
-2018 IEEE High Performance Extreme Computing Conference, HPEC 2018.
-
-<a id="2">[2]</a>
-Alevra, E., & Pietzuch, P. (2020).
-A Parallel Data Structure for Streaming Graphs. 
-Master’s thesis, Imperial College London, 2020.
